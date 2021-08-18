@@ -1,4 +1,12 @@
-<h1>{{ title }}</h1>
+<h1>
+  {{ title }}
+  <span
+    ><button (click)="messageService.clear()">
+      clear top 4 messages
+    </button></span
+  >
+</h1>
+
 <nav>
   <a routerLink="/cl-dashboard">Dashboard</a>
   <a routerLink="/cl-heroes">Heroes</a>
