@@ -14,3 +14,43 @@
 img {
   max-width: 100%;
 }
+
+.block {
+  border: 1px solid black;
+
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.container-flex2 {
+  max-width: 700px;
+  max-height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+}
+
+.grid > div {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+.grid-item-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.grid-item-7 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
