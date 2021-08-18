@@ -30,6 +30,9 @@ import { BonusPointModule } from "./bonus-point/bonus-point.module";
     // Remove it when a real server is ready to receive requests.
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
+      // In order to get json in assets folder
+      // Ref: https://github.com/ngx-translate/core/issues/853
+      passThruUnknownUrl: true,
     }),
     BonusPointModule,
   ],
