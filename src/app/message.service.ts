@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable()
 export class MessageService {
@@ -9,6 +9,8 @@ export class MessageService {
   }
 
   clear() {
-    this.messages = [];
+    if (confirm("Do you really want to clear?")) {
+      this.messages = [];
+    }
   }
 }
