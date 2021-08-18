@@ -28,7 +28,6 @@ h4 {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
 }
 
 .col {
@@ -73,9 +72,14 @@ h4 {
 @media (max-width: 850px) {
   .grid {
     margin: 0;
-    flex-wrap: unset;
+    /* flex-wrap: unset; */
   }
   .module {
     min-width: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .grid {
+    flex-wrap: nowrap;
   }
 }
