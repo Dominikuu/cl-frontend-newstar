@@ -28,6 +28,7 @@ h4 {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .col {
@@ -53,6 +54,9 @@ h4 {
 }
 .grid-pad > [class*="col-"]:last-of-type {
   padding-right: 20px;
+}
+.grid-pad > [class*="col-"] {
+  flex-basis: calc(50% - 40px);
 }
 
 @media (max-width: 768px) {
